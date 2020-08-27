@@ -10,17 +10,17 @@ We will write end-to-end (functional) tests for API endpoints which does CRUD op
 - **body-parser** - Node.js HTTP request body parsing middleware
 - **nyc** - command-line-client for Istanbul (JavaScript test coverage tool)
 
-## 1. Initialize the project:
+### 1. Initialize the project:
 ```
 npm init
 ```
 
-## 2. Install the required packages:
+### 2. Install the required packages:
 ```
 npm install express mocha chai body-parser mongoose supertest nyc
 ```
 
-3. Update the "main" and "scripts" params in package.json like this:
+### 3. Update the "main" and "scripts" params in package.json like this:
 ```
 {
   "name": "musika",
@@ -110,7 +110,7 @@ Windows does not support **shebang lines**, so this line will be ignored.
 
 Run ```node bin/www``` to start the server on localhost:3000
 
-4. Add user model, controller, route and test files. The project structure should be like this:
+### 4. Add user model, controller, route and test files. The project structure should be like this:
 !['express'](img/nodejs-express-mongodb-mocha-chai.jpg)
 
 The app.js:
@@ -420,7 +420,7 @@ describe("api/users", () => {
 });
 ```
 
-5. Execute Test Coverage:
+### 5. Execute Test Coverage:
 
 ```shell
 npm run coverage
