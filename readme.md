@@ -205,7 +205,7 @@ const userSchema = new mongoose.Schema({
 module.exports.User = mongoose.model("User", userSchema);
 ```
 
-The user.route.js:
+**user.route.js**:
 
 ```javascript
 const express = require("express");
@@ -435,5 +435,6 @@ This will create the coverage folder, open it's index.html:
 
 Nicely how Istanbul shows exactly which lines of code are not covered by your tests:
 !['tdd-istanbul-express-test-coverage-file'](img/tdd-nyc-istanbul-test-coverage-file.jpg)
+
 
 Read more articles like this on [Girlsincode](https://girlsincode.com/articles/)
