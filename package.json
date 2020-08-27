@@ -1,0 +1,25 @@
+{
+  "name": "musika",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "bat": "pre.bat",
+    "cls": "cls || clear",
+    "start": "node bin/www",
+    "test": "mocha --timeout 11000 --exit",
+    "coverage": "npm run bat && nyc --reporter=html --reporter=text npm test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "chai": "^4.2.0",
+    "express": "^4.17.1",
+    "mocha": "^8.1.1",
+    "mongoose": "^5.10.0",
+    "supertest": "^4.0.2",
+    "nyc": "^15.1.0"
+  }
+}
