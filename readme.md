@@ -10,12 +10,12 @@ We will write end-to-end (functional) tests for API endpoints which does CRUD op
 - **body-parser** - Node.js HTTP request body parsing middleware
 - **nyc** - command-line-client for Istanbul (JavaScript test coverage tool)
 
-1. Initialize the project:
+## 1. Initialize the project:
 ```
 npm init
 ```
 
-2. Install the required packages:
+## 2. Install the required packages:
 ```
 npm install express mocha chai body-parser mongoose supertest nyc
 ```
