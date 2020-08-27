@@ -1,14 +1,14 @@
 # Testing Express.js API using Mocha & Chai
 
 We will write end-to-end (functional) tests for API endpoints which does CRUD operations in Express. This project uses:
-- **Express.js** - Node.js web application framework
-- **Mocha** - JavaScript test framework running on Node.js and in the browser
-- **Chai** - BDD / TDD assertion library for node and the browser that can be used with any javascript testing framework
-- **Supertest** - npm module with a high-level abstraction for HTTP testing
-- **MongoDB** - document-based, distributed NoSQL database
-- **Mongoose** - MongoDB object modeling for Node.js
-- **body-parser** - Node.js HTTP request body parsing middleware
-- **nyc** - command-line-client for Istanbul (JavaScript test coverage tool)
+- **[Express.js](https://expressjs.com/)** - Node.js web application framework
+- **[Mocha](https://mochajs.org/)** - JavaScript test framework running on Node.js and in the browser
+- **[Chai](https://www.chaijs.com/)** - BDD / TDD assertion library for node and the browser that can be used with any javascript testing framework
+- **[Supertest](https://www.npmjs.com/package/supertest)** - npm module with a high-level abstraction for HTTP testing
+- **[MongoDB](https://www.mongodb.com/)** - document-based, distributed NoSQL database
+- **[Mongoose](https://mongoosejs.com/)** - MongoDB object modeling for Node.js
+- **[body-parser](https://www.npmjs.com/package/body-parser)** - Node.js HTTP request body parsing middleware
+- **[nyc](https://www.npmjs.com/package/nyc)** - command-line-client for Istanbul (JavaScript test coverage tool)
 
 ### 1. Initialize the project:
 ```
@@ -113,7 +113,7 @@ Run ```node bin/www``` to start the server on localhost:3000
 ### 4. Add user model, controller, route and test files. The project structure should be like this:
 !['express'](img/nodejs-express-mongodb-mocha-chai.jpg)
 
-The app.js:
+**app.js**:
 
 ```javascript
 const express = require("express");
@@ -158,7 +158,7 @@ app.use((err, req, res, next) => {
 module.exports = app;
 ```
 
-The config.js:
+**config.js**:
 
 ```javascript
 module.exports = {
@@ -177,7 +177,7 @@ module.exports = {
 };
 ```
 
-The user.model.js:
+**user.model.js**:
 
 ```javascript
 const mongoose = require("mongoose");
@@ -225,7 +225,7 @@ router
 module.exports = router;
 ```
 
-The user.controller.js:
+**user.controller.js**:
 
 ```javascript
 const mongoose = require("mongoose");
@@ -274,7 +274,7 @@ module.exports.deleteUser = async (req, res) => {
 };
 ```
 
-The user.test.js:
+**user.test.js**:
 
 ```javascript
 const expect = require("chai").expect;
