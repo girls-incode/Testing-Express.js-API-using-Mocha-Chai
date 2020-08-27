@@ -434,6 +434,7 @@ This will create the coverage folder, open it's index.html:
 !['tdd-istanbul-express-test-coverage'](img/tdd-nyc-istanbul-test-coverage.jpg)
 
 Nicely how Istanbul shows exactly which lines of code are not covered by your tests:
+
 !['tdd-istanbul-express-test-coverage-file'](img/tdd-nyc-istanbul-test-coverage-file.jpg)
 
 
